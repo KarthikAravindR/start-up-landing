@@ -1,0 +1,193 @@
+.banner {
+    background-color: #EFF8FF;
+    /* background-color: #090B0F; */
+    color: #090B0F;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bannerdetails {
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    padding: 100px 30px 30px 120px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.bannerdetailsheading {
+    font-size: 2rem;
+    margin-bottom: 27px;
+    color: #090B0F;
+}
+
+.bannerdetailsdesc {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.bannerdetailspromise {
+    margin: 12px 0;
+    font-size: 1.2rem;
+}
+
+.bannerdetailsbook {
+    background-color: #090B0F;
+    color: white;
+    border: 1px solid #090B0F;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 27px;
+    border-radius: 2px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.bannerimage {
+    width: 60%;
+    height: 100%;
+    /* padding: 50px 120px 30px 30px; */
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: blue; */
+}
+.bannerdetails div{
+    color: #BF7A4D;
+}
+.bannerdynamicwriting{
+    min-height: 70px;
+    height: auto;
+}
+.bannerdynamicwriting h2{
+    color: rgb(107, 106, 106);
+}
+.bannerdynamicwriting h2 span{
+    color: #090B0F;
+}
+#egg1 {
+    width: 99.9%;
+    height: 100%;
+    border-left: 1px solid #0E121A;
+    /* border-top: 1px solid #0E121A; */
+    border-bottom: 1px solid #0E121A;
+    -webkit-border-radius: 88% 11% 39% 61% / 77% 3% 7% 44%;
+    border-radius: 88% 11% 39% 61% / 77% 3% 7% 44%;
+    /* box-shadow: 3px 3px 7px black; */
+}
+
+#egg2 {
+    width: 97%;
+    height: 100%;
+    border-left: 1px solid #0E121A;
+    /* border-top: 1px solid #0E121A; */
+    border-bottom: 1px solid #0E121A;
+    -webkit-border-radius: 88% 11% 39% 61% / 77% 3% 7% 44%;
+    border-radius: 88% 11% 39% 61% / 77% 3% 7% 44%;
+    margin-left: auto;
+}
+
+#egg3 {
+    width: 97%;
+    height: 100%;
+    margin-left: auto;
+    border-left: 1px solid #0E121A;
+    /* border-top: 1px solid #0E121A; */
+    border-bottom: 1px solid #0E121A;
+    -webkit-border-radius: 65% 11% 39% 61% / 77% 3% 7% 44%;
+    border-radius: 65% 11% 39% 61% / 77% 3% 7% 44%;
+    padding: 40px 0 0 50px;
+    box-sizing: border-box;
+    background-image: url('../../../assets/images/landing1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: nudge 5s linear infinite alternate; */
+}
+
+@keyframes nudge {
+    0%, 100% {
+        width: 95%;
+    }
+    50% {
+        width: 97%;
+    }
+    80% {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        width: 100%;
+        height: max-content;
+    }
+    .bannerdetails {
+        width: 50%;
+        height: 650px;
+        padding: 100px 10px 30px 30px;
+    }
+    .bannervideo {
+        width: 50%;
+        height: 650px;
+        padding: 50px 30px 30px 10px;
+    }
+    #egg1 {
+        top: 570px;
+        right: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        width: 100%;
+        height: max-content;
+    }
+    .bannerdetails {
+        width: 100%;
+        height: max-content;
+        padding: 60px;
+    }
+    .bannervideo {
+        width: 100%;
+        height: 720px;
+        padding: 10px;
+    }
+    #egg {
+        padding: 50px;
+    }
+    #egg1 {
+        top: 570px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        width: 100%;
+        height: max-content;
+    }
+    .bannerdetails {
+        width: 100%;
+        height: max-content;
+        padding: 30px;
+    }
+    .bannervideo {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    #egg {
+        padding: 50px 30px 30px 30px;
+    }
+    #egg1 {
+        top: 570px;
+        right: 40px;
+    }
+}

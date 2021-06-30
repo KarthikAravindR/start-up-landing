@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.trigger-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 2000;
+    transition: transform 0.4s;
+    background-color: #EFF8FF;
+    color: #090B0F;
+    padding: 0 120px;
+    font-family: 'Montserrat', sans-serif;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); */
+}
+.ToolbarLogo{
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ToolbarLogo-one{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.ToolbarLogo-two{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.ToolbarLogo-arrow{
+    width: 100%;
+    margin: 7px auto 0 auto;
+    height: 2px;
+    background-color: #090B0F;
+    position: relative;
+}
+.ToolbarLogo-arrow::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    top: -5.8px;
+    right: -7px;
+    border-top: solid 7px transparent;
+    border-left: solid 7px #090B0F;
+    border-right: solid 0px transparent;
+    border-bottom: solid 7px transparent;
+}
+.toolbar-all-actions{
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.toolbar-actions{
+    height: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #BF7A4D;
+    /* margin-right: 27px; */
+    /* width: 10%; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s ease-in-out;
+}
+.toolbar-bull{
+    margin: 0 27px 10px 27px;
+}
+.toolbar-actions:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #BF7A4D;
+    transition: all .5s ease-in-out;
+}
+.toolbar-actions-active{
+    color: #090B0F;
+    border-bottom: 1px solid #090B0F;
+    transition: all .5s ease-in-out;
+}
+.toolbar-all-contact{
+    width: 33.33%;
+    display: flex;
+    padding-right: 120px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+}
+.toolbar-font{ 
+    font-size: 2.7rem !important;
+}
+
+.toolbar-contact:hover,.toolbar-contact:active{
+    color: #E5CC3F;
+    text-decoration: none;
+}
+.trigger-menu-wrapper button{
+    height: 100%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.trigger-menu-wrapper button:hover, .trigger-menu-wrapper button:active{
+    border: 1px solid rgba(0, 0, 0, 0);
+    outline: none;
+}
+@media (max-width: 1100px) {
+    .ToolbarLogo{
+        padding-left: 10px;
+        width: 15%;
+    }
+    .toolbar-all-actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .toolbar-all-contact{
+        padding-right: 10px;
+        width: 15%;
+    }
+}
+@media (max-width: 900px) {
+    .ToolbarLogo{
+        padding-left: 10px;
+        width: 7%;
+    }
+    .toolbar-all-contact{
+        width: 7%;
+    }
+}
+@media (max-width: 700px) {
+    .ToolbarLogo{
+        padding-left: 30px;
+        height: 50%;
+    }
+    .toolbar-font{ 
+        font-size: 1.7rem !important;
+    }
+    .toolbar-actions{
+        font-size: 1rem;
+    }
+    .toolbar-bull{
+        margin: 0 10px;
+    }
+    .toolbar-all-contact{
+        padding-right: 30px;
+    }
+}
+@media (max-width: 550px) {
+    .ToolbarLogo{
+        padding-left: 30px;
+        height: 50%;
+    }
+    .toolbar-all-actions{
+        display: none;
+    }
+    .toolbar-all-contact{
+        display: none;
+    }
+}

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
 
-function App() {
+import Startup from './Startup/pages/Startup'
+import Toolbar from './shared/Toolbar/Toolbar'
+import './App.css'
+
+const App = (props) => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Suspense>
+          <Route path="/" exact >
+            <Toolbar />
+            <Startup />
+          </Route>
+          {/* <Route path="/registration" exact >
+            <Registration />
+          </Route>
+          <Route path="/gallery" exact >
+            <Gallery />
+          </Route>
+          <Route path="/Training" exact >
+            <Training />
+          </Route> */}
+        </Suspense>
+      </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;

@@ -1,0 +1,125 @@
+.registerContainer{
+    width: 100%;
+    height: max-content;
+    background-color: #EFF8FF;
+    padding: 70px 120px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registerImage{
+    width: 60%;
+    display: flex;
+    /* height: 100%; */
+}
+.registerImage img{
+    flex-grow: 1;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.registerForm{
+    width: 40%;
+    display: flex;
+    padding: 0 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+}
+.registerForm h2{
+    margin: 0 0 30px 0; 
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.registerForm button{
+    border: none;
+    background-color: #EFF8FF;
+}
+.registerForm button:disabled{
+    border: none;
+    background-color: #ccc;
+    color: rgb(63, 62, 62);
+    cursor: not-allowed;
+}
+.registerForm button:disabled:hover{
+    border: none;
+    background-color: #ccc;
+    color: rgb(63, 62, 62);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.registerForm .userbox {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.registerForm .userbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #090909;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid #BF7A4D;
+    outline: none;
+    background: transparent;
+}
+.registerForm .userbox textarea {
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 16px;
+    min-height: 100px;
+    height: auto;
+    color: #090909;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border: 1px solid #BF7A4D;
+    outline: none;
+    background: transparent;
+}
+
+
+.registerForm form .submit_button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #090B0F;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px
+}
+
+.registerForm .submit_button:hover {
+    background: #090B0F;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #090B0F, 0 0 25px #090B0F, 0 0 50px #090B0F, 0 0 100px #090B0F;
+}
+
+.registerForm .submit_button span {
+    position: absolute;
+    display: block;
+}
+
+.registerForm .submit_button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+.invalid{
+    /* display: inline; */
+    color: red;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px auto 10px 0;
+}
