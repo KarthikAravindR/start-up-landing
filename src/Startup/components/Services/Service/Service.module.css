@@ -60,3 +60,25 @@
     background-color: #efeefb;
     color: #7e69da;
 }
+@media (max-width: 1100px) {
+    .serviceContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .service{
+        width: 40%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 400px) {
+    .serviceContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .service{
+        width: 90%;
+        margin: 10px 0;
+    }
+}

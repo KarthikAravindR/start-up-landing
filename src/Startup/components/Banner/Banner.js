@@ -1,5 +1,4 @@
 import React from 'react'
-import { withRouter } from 'react-router'
 import Fade from 'react-reveal/Fade';
 // import video1 from '../../assets/videos/PCAP.mp4'
 import classes from './Banner.module.css'
@@ -7,11 +6,8 @@ import DyanamicWriting from './DyanamicWriting/DynamicWriting'
 
 
 const Banner = props => {
-    const registerClickHandler = () => {
-        props.history.push('/registration')
-    }
     return (
-        <div className={classes.banner}>
+        <div className={classes.banner} id='Home'>
             <div className={classes.bannerdetails}>
                 <Fade left>
                     <div className={classes.bannerdetailsheading}>Welcome to The Beginner Consulting</div>
@@ -23,7 +19,11 @@ const Banner = props => {
                     <div className={classes.bannerdynamicwriting}><h2>Are  you  looking  for <span>{<DyanamicWriting />} </span></h2> </div>
                 </Fade>
                 <Fade left>
-                    <button className={classes.bannerdetailsbook} onClick={registerClickHandler}>Get Appointment &darr;</button>
+                    <button
+                        className={classes.bannerdetailsbook}
+                        onClick={() => {document.getElementById('Appointment').scrollIntoView({ behavior: 'smooth' }) }}>
+                        Get Appointment &darr;
+                    </button>
                 </Fade>
             </div>
             <div className={classes.bannerimage}>
@@ -33,10 +33,10 @@ const Banner = props => {
                             <div id={classes.egg3}></div>
                         </div>
                     </div>
-                </Fade> 
+                </Fade>
             </div>
         </div>
     )
 }
 
-export default withRouter(Banner)
+export default Banner

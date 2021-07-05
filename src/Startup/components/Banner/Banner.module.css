@@ -3,17 +3,17 @@
     /* background-color: #090B0F; */
     color: #090B0F;
     width: 100%;
-    height: 630px;
+    height: calc(100vh - 100px);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     font-family: 'Montserrat', sans-serif;
 }
 
 .bannerdetails {
-    width: 40%;
+    width: 45%;
     height: 100%;
     text-align: left;
-    padding: 100px 30px 30px 120px;
+    padding: 30px 30px 30px 120px;
     box-sizing: border-box;
     word-wrap: break-word;
 }
@@ -46,11 +46,12 @@
     padding: 10px;
     margin-top: 27px;
     border-radius: 2px;
+    cursor: pointer;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .bannerimage {
-    width: 60%;
+    width: 55%;
     height: 100%;
     /* padding: 50px 120px 30px 30px; */
     box-sizing: border-box;
@@ -122,72 +123,37 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .banner {
         width: 100%;
-        height: max-content;
     }
     .bannerdetails {
-        width: 50%;
-        height: 650px;
-        padding: 100px 10px 30px 30px;
+        width: 40%;
+        box-sizing: border-box;
+        padding: 30px 10px 30px 10px;
     }
-    .bannervideo {
-        width: 50%;
-        height: 650px;
-        padding: 50px 30px 30px 10px;
-    }
-    #egg1 {
-        top: 570px;
-        right: 100px;
+    .bannerimage{
+        padding: 30px 0px 30px 10px;
     }
 }
 
 @media (max-width: 900px) {
-    .banner {
-        width: 100%;
-        height: max-content;
-    }
     .bannerdetails {
         width: 100%;
-        height: max-content;
-        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 100px;
+        text-align: center;
     }
-    .bannervideo {
-        width: 100%;
-        height: 720px;
-        padding: 10px;
-    }
-    #egg {
-        padding: 50px;
-    }
-    #egg1 {
-        top: 570px;
-        right: 40px;
+    .bannerimage{
+        display: none;
     }
 }
 
-@media (max-width: 480px) {
-    .banner {
-        width: 100%;
-        height: max-content;
-    }
+@media (max-width: 600px) {
     .bannerdetails {
-        width: 100%;
-        height: max-content;
-        padding: 30px;
-    }
-    .bannervideo {
-        width: 100%;
-        height: 400px;
-        padding: 0px;
-        margin-bottom: 20px;
-    }
-    #egg {
-        padding: 50px 30px 30px 30px;
-    }
-    #egg1 {
-        top: 570px;
-        right: 40px;
+        padding: 30px 10px;
     }
 }

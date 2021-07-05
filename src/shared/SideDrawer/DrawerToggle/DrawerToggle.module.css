@@ -10,7 +10,6 @@
         flex-flow: column;
         justify-content: space-around;
         margin-left: auto;
-        margin-right: 30px;
         padding: 10px 0;
         box-sizing: border-box;
         cursor: pointer;
@@ -18,6 +17,6 @@
     .DrawerToggle div {
         width: 90%;
         height: 3px;
-        background-color: white;
+        background-color: #090909;;
     }
 }
